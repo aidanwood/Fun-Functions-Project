@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Cubic Bezier Curve</title>
+		<style>
+			#canvas{
+			border:5px solid black; 
+			}
+		</style>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <style>
+            body {
+                padding-top: 20px;
+                padding-bottom: 40px;
+				padding-left: 25px
+            }
+        </style>
+        <link rel="stylesheet" href="css/bootstrap-responsive.min.css">
+        <link rel="stylesheet" href="css/main.css">
+
+        <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+ 	</head>
+	<body>
+		<h1>The Bezier Graph</h1>
+		<ul class="nav nav-pills">
+
+  <li><a href="Main.html">Home</a></li>
+  
+  <li><a href="Graph.html">Graph</a></li>
+  <li class="active">
+    <a href="More.html">Why This Function is Fun</a>
+  </li>
+  <li><a href="Table.html">Table</a></li>
+</ul>
+
+
+		
+	<!--<h3>Equation</h3>
+		<ul>
+			<li><p>X = x<sub>0</sub> + 3t(x<sub>1</sub> - x<sub>0</sub>) + 3t<sup>2</sup>(x<sub>0</sub> + x<sub>2</sub> - 2x<sub>1</sub>) + t<sup>3</sup>(x<sub>3</sub> - x<sub>0</sub> + 3x<sub>1</sub> - 3x<sub>2</sub>)</p></li>
+			<li><p>Y = y<sub>0</sub> + 3t(y<sub>1</sub> - y<sub>0</sub>) + 3t<sup>2</sup>(y<sub>0</sub> + y<sub>2</sub> - 2y<sub>1</sub>) + t<sup>3</sup>(y<sub>3</sub> - y<sub>0</sub> + 3y<sub>1</sub> - 3y<sub>2</sub>)</p></li>
+		</ul> -->
+		<h3>Why Is This Function Fun?</h3>
+		<p>The Bezier graph is fun because it does not take the usual coordinates of a function, x and y. 
+	This is because it only continues for a certain distance and does not go on forever like a line or quadratic. 
+	It takes a variable called t, where t <= 1 and t >= 0. Each value of t will give you a different coordinate, so the more values of t you put in the more accurate your graph will be. For my graph, I calculated t with 1000 different numbers, but a longer graph needs more different intervals than a smaller one. 
+	In addition to varying values of t in your X equation and Y equation, you need to plug in the parameters. (x0, y0) is the first point, (x3, y3) is the end point, and both (x2, y2) and (x1, y1) are control, points. 
+	The curve goes through the first point and the end point, and the curve is adjusted using the control points. 
+	Bezier curves are used in computer graphics because they are very easy to construct, and with enough control points can form any continuous shape. 
+	They are used in most side scrolled games, most notably Happy Wheels.</p>
+
+	
+
+	</body>
+	
+
+</html>

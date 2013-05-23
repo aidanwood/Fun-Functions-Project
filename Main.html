@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Cubic Bezier Curve</title>
+		<style>
+			#canvas{
+			border:5px solid black; 
+			}
+		</style>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <style>
+            body {
+                padding-top: 20px;
+                padding-bottom: 40px;
+				padding-left: 25px
+            }
+        </style>
+        <link rel="stylesheet" href="css/bootstrap-responsive.min.css">
+        <link rel="stylesheet" href="css/main.css">
+
+        <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+ 	</head>
+	<body>
+		<h1>The Bezier Graph</h1>
+		<ul class="nav nav-pills">
+<li class="active">
+    <a href="Main.html">Home</a>
+  </li>
+  <li><a href="Graph.html">Graph</a></li>
+  <li><a href="More.html">Why This Function is Fun</a></li>
+  <li><a href="Table.html">Table</a></li>
+</ul>
+
+
+		
+		<h3> Description </h3>
+		<p> "A Bezier curve is a parametric curve frequently used in computer graphics and related fields. Generalizations of Bezier curves to higher dimensions are called Bezier surfaces, of which the Bezier triangle is a special case." - <img height="15" width="50"  src="wikipedia.png"><a href="http://en.wikipedia.org/wiki/Bezier_curve"><i class="icon-globe"></i> </a>
+		
+		</p>
+		<h3>Equation</h3>
+		<p><strong>Mother Function</strong></p>
+		<ul>
+			<li><p>X = x<sub>0</sub> + 3t(x<sub>1</sub> - x<sub>0</sub>) + 3t<sup>2</sup>(x<sub>0</sub> + x<sub>2</sub> - 2x<sub>1</sub>) + t<sup>3</sup>(x<sub>3</sub> - x<sub>0</sub> + 3x<sub>1</sub> - 3x<sub>2</sub>)</p></li>
+			<li><p>Y = y<sub>0</sub> + 3t(y<sub>1</sub> - y<sub>0</sub>) + 3t<sup>2</sup>(y<sub>0</sub> + y<sub>2</sub> - 2y<sub>1</sub>) + t<sup>3</sup>(y<sub>3</sub> - y<sub>0</sub> + 3y<sub>1</sub> - 3y<sub>2</sub>)</p></li>
+		</ul>
+		<p><strong>Funciton Represented in Graph and Table</strong></p>
+		<ul>
+			<li><p>X = 165 + 3t(344 - 165) + 3t<sup>2</sup>(165 + 65 - 2 * 344) + t<sup>3</sup>(176 - 165 + 3 * 344 - 3 * 65)</p></li>
+			<li><p>Y = 323 + 3t(189 - 323) + 3t<sup>2</sup>(323 + 213 - 2 * 189) + t<sup>3</sup>(14 - 323 + 3 * 189 - 3 * 213)</p></li>
+		</ul>
+		<h3> Table </h3>
+		<script>
+		//Shortened Table Data
+		if(true)
+		{
+			document.write('<table border = "1">')
+			document.write('<tr>')
+			document.write('<td>T</td>')
+			document.write('<td>X</td>')
+			document.write('<td>Y</td>')
+			document.write('</tr>')
+			document.write('<tr>')
+			document.write('<td>0</td>')
+			document.write('<td>165</td>')
+			document.write('<td>323</td>')
+			document.write('</tr>')
+			document.write('<tr>')
+			document.write('<td>0.1</td>')
+			document.write('<td>205.808</td>')
+			document.write('<td>287.159</td>')
+			document.write('</tr>')
+			document.write('<tr>')
+			document.write('<td>0.2</td>')
+			document.write('<td>224.224</td>')
+			document.write('<td>258.512</td>')
+			document.write('</tr>')
+			document.write('<tr>')
+			document.write('<td>0.3</td>')
+			document.write('<td>225.336</td>')
+			document.write('<td>234.773</td>')
+			document.write('</tr>')
+			document.write('<tr>')
+			document.write('<td>0.4</td>')
+			document.write('<td>214.232</td>')
+			document.write('<td>213.656</td>')
+			document.write('</tr>')
+			document.write('<tr>')
+			document.write('<td>0.5</td>')
+			document.write('<td>196</td>')
+			document.write('<td>192.875</td>')
+			document.write('</tr>')
+			document.write('<tr>')
+			document.write('<td>0.6</td>')
+			document.write('<td>175.728</td>')
+			document.write('<td>170.144</td>')
+			document.write('</tr>')
+			document.write('<tr>')
+			document.write('<td>0.7</td>')
+			document.write('<td>158.504</td>')
+			document.write('<td>143.177</td>')
+			document.write('</tr>')
+			document.write('<tr>')
+			document.write('<td>0.8</td>')
+			document.write('<td>149.416</td>')
+			document.write('<td>109.688</td>')
+			document.write('</tr>')
+			document.write('<tr>')
+			document.write('<td>0.9</td>')
+			document.write('<td>153.552</td>')
+			document.write('<td>67.391</td>')
+			document.write('</tr>')
+			document.write('<tr>')
+			document.write('<td>1</td>')
+			document.write('<td>176</td>')
+			document.write('<td>14</td>')
+			document.write('</tr>')
+			document.write('</table>')
+		}
+		
+		</script>
+		<h3> Facts </h3>
+
+	</body>
+	
+
+</html>
